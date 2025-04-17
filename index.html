@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="script.js" defer></script>
+  <title>Group project interactive recipe/Home</title>
+</head>
+<body>
+
+  <div class="header">
+    <div id="title"><h1>Home</h1></div>
+
+    <div id="navBar" class="navBar">
+      <a href="index.html">Home</a>
+      <a href="mainDish.html">Mains</a>
+      <a href="sideDish.html">Sides</a>
+      <a href="app.html">Apps</a>
+      <a href="drinks.html">Drinks</a>
+      <a href="19.html">19+ Drinks</a>
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <section id="guide">
+    <h2>Guide</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+  </section>
+
+  <section>
+    <form id="preferencesForm" action="#" method="POST">
+      <h2>Preferences</h2>
+      <fieldset>
+        <legend>Allergies</legend>
+        <div id="allergies">
+          <label><input type="checkbox" name="allergies" value="Eggs"> Eggs</label>
+          <label><input type="checkbox" name="allergies" value="Milk"> Milk</label>
+          <label><input type="checkbox" name="allergies" value="Mustard"> Mustard</label>
+          <label><input type="checkbox" name="allergies" value="Peanuts"> Peanuts</label>
+          <label><input type="checkbox" name="allergies" value="Fish"> Fish</label><br>
+          <label><input type="checkbox" name="allergies" value="Sesame seeds"> Sesame seeds</label>
+          <label><input type="checkbox" name="allergies" value="Soy"> Soy</label>
+          <label><input type="checkbox" name="allergies" value="Wheat"> Wheat</label>
+          <label><input type="checkbox" name="allergies" value="Shell Fish"> Shell Fish</label>
+          <label><input type="checkbox" name="allergies" value="Almonds"> Almonds</label>
+        </div>
+        <button type="button" onclick="selectAll('allergies')">Select All</button>
+        <button type="button" onclick="deselectAll('allergies')">Deselect All</button>
+      </fieldset>
+
+    
+      <fieldset>
+        <legend>Main</legend>
+        <div id="mainPrefs">
+          <label><input type="checkbox" name="main" value="Chicken"> Chicken</label>
+          <label><input type="checkbox" name="main" value="Fish"> Fish</label>
+          <label><input type="checkbox" name="main" value="Beef"> Beef</label>
+          <label><input type="checkbox" name="main" value="Veal"> Veal</label>
+          <label><input type="checkbox" name="main" value="Salad"> Salad</label><br>
+          <label><input type="checkbox" name="main" value="Low Sodium"> Low Sodium</label>
+          <label><input type="checkbox" name="main" value="High Protein"> High Protein</label>
+          <label><input type="checkbox" name="main" value="Keto"> Keto</label>
+          <label><input type="checkbox" name="main" value="Vegetarian"> Vegetarian</label>
+          <label><input type="checkbox" name="main" value="Carnivore"> Carnivore</label>
+        </div>
+        <button type="button" onclick="selectAll('mainPrefs')">Select All</button>
+        <button type="button" onclick="deselectAll('mainPrefs')">Deselect All</button>
+      </fieldset>
+
+      <button type="submit">Submit Preferences</button>
+    </form>
+  </section>
+
+ 
+  <section id="rndmBtn">
+    <h2>Random button</h2>
+    <p>Take a Chance</p>
+    <button class="random" id="random">Random</button>
+    <div id="random-result"></div>
+  </section>
+
+  <footer>&copy;2025 Musa Jama, Julila Mpesha, Michael Newman</footer>
+</body>
+</html>
